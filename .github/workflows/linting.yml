@@ -20,4 +20,4 @@ jobs:
           pip install pre-commit jupyter
 
       - name: Run pre-commit hooks
-        run: pre-commit run --all
+        run: pre-commit run --all-files
