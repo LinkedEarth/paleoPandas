@@ -28,9 +28,10 @@ jobs:
       - name: Conda list
         run: conda list
 
-      - name: Install conda env as ipykernel
+      - name: Install extras
         run: |
           python -m ipykernel install --user --name paleopandas
+          pip install nbmake
 
       - name: Run all notebooks
         run: | 
