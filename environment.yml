@@ -9,7 +9,7 @@ dependencies:
   - pip
   - Python = 3.9.6
   - jupyter
-  - nbconvert  # for pre-commit notebook cleanout
+  - nbstripout  # for pre-commit notebook cleanout
   - pre-commit
   - pip:
     - setuptools==56.0.0
