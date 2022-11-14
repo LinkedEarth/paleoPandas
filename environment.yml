@@ -10,10 +10,9 @@ dependencies:
   - python>=3.9
   - jupyter
   # testing
-  - nbconvert  # for pre-commit notebook cleanout
+  - nbsripout  # for pre-commit notebook cleanout
   - pre-commit
   - pytest
-  - nbmake
   - pip:
     - setuptools==56.0.0
     - git+https://github.com/LinkedEarth/Pyleoclim_util.git@Development

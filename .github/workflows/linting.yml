@@ -17,7 +17,7 @@ jobs:
 
       - name: Install pre-commit
         run: |
-          pip install pre-commit jupyter pygments==2.6.1
+          pip install pre-commit jupyter pygments==2.6.1 nbstripout
 
       - name: Run pre-commit hooks
         run: pre-commit run --all-files
