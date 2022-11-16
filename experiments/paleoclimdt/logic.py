@@ -18,7 +18,7 @@ Python Version {sys.version}
 Pandas Version {pd.__version__}
 ''')
 
-def series_attr_string(*args, name: str, s: pd.Series) -> str:
+def attr_string(*args, name: str, s: pd.Series) -> str:
     dashes = ''.join(['-' for i in range(0, len(s)+27)])
     return f'''
     {name} Series Created | Size: {s.size}
@@ -41,8 +41,8 @@ def test_older_than_1700():
     for a in arglist: 
         try:
             ns, s = generate_date_range(a[0], a[1], type=a[2])
-            logger.info(name="Nanosecond", s=ns)
-            logger.info(name="Second", s=s)
+            logger.info(attr_string(name="Nanosecond", s=ns))
+            logger.info(attr_string(name="Second", s=s))
         except:
             logger.error(f'''generate_date_range too far in the past. {a[0], a[2]}''')
 
