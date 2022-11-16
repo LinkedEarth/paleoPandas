@@ -4,7 +4,6 @@ channels:
   - conda-forge
 dependencies:
   - numpy
-  - pandas>=1.5
   - cartopy
   - pip
   - python=3.10
@@ -15,4 +14,6 @@ dependencies:
   - pytest
   - setuptools
   - pip:
+    - --extra-index-url https://pypi.anaconda.org/scipy-wheels-nightly/simple
+    - pandas==2.0.0.dev0+664.g86f182829d
     - git+https://github.com/LinkedEarth/Pyleoclim_util.git@Development
