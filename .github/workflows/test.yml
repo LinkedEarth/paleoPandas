@@ -33,6 +33,6 @@ jobs:
           python -m ipykernel install --user --name paleopandas
           pip install nbmake
 
-      - name: Run all notebooks
+      - name: Run selected notebooks
         run: | 
-          pytest --nbmake --nbmake-kernel=paleopandas
+          pytest --nbmake --nbmake-kernel=paleopandas examples/Playing_with_Series_in_Pyleoclim.ipynb
