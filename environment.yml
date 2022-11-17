@@ -9,6 +9,8 @@ dependencies:
   - jupyterlab
   - nbconvert  # for pre-commit notebook cleanout
   - pre-commit
+  - pytest
+  - setuptools
   - pip:
     - --extra-index-url https://pypi.anaconda.org/scipy-wheels-nightly/simple
     - pandas==2.0.0.dev0+664.g86f182829d
