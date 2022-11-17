@@ -52,8 +52,3 @@ This helps us keep the repo size down so its quick to download.
 ```
 pre-commit install
 ```
-
-pip install -i https://pypi.anaconda.org/scipy-wheels-nightly/simple pandas
-
-
-
