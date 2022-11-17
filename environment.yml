@@ -1,13 +1,12 @@
 name: paleopandas
 channels:
-  - defaults
   - conda-forge
 dependencies:
   - numpy
   - cartopy
   - pip
-  - Python
-  - jupyter
+  - python<3.11  # pinned back by numba coming from pip
+  - jupyterlab
   - nbconvert  # for pre-commit notebook cleanout
   - pre-commit
   - pip:
