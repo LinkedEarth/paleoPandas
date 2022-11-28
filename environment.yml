@@ -1,19 +1,17 @@
 name: paleopandas
 channels:
-  - defaults
   - conda-forge
 dependencies:
   - numpy
   - cartopy
   - pip
-  - python=3.10
-  - jupyter
-  # testing
-  - nbstripout  # for pre-commit notebook cleanout
+  - python<3.11  # pinned back by numba coming from pip
+  - jupyterlab
+  - nbconvert  # for pre-commit notebook cleanout
   - pre-commit
   - pytest
   - setuptools
   - pip:
     - --extra-index-url https://pypi.anaconda.org/scipy-wheels-nightly/simple
     - pandas==2.0.0.dev0+724.ga6d3e13b3a
-    - git+https://github.com/LinkedEarth/Pyleoclim_util.git@Development
+    - git+https://github.com/LinkedEarth/Pyleoclim_util.git
