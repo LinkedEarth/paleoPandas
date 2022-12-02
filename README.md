@@ -18,7 +18,7 @@ cd paleoPandas
 ```
 
 Now you'll build a conda environment to ensure that all the required packages
-are installed. 
+are installed. NOTE: You may want to use `mamba` for a quicker solve (same results).
 
 ```
 conda env create -f environment.yml
