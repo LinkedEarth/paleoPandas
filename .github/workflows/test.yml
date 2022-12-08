@@ -9,6 +9,11 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version:
+          - "3.9"
+          - "3.10"
     defaults:
       run:
         shell: bash -l {0}
@@ -19,7 +24,7 @@ jobs:
       - name: Install conda dependencies
         uses: conda-incubator/setup-miniconda@v2
         with:
-          python-version: "3.10"
+          python-version: ${{ matrix.python-version }}
           mamba-version: "*"
           activate-environment: paleopandas
           environment-file: environment.yml
