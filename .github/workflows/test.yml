@@ -40,4 +40,4 @@ jobs:
 
       - name: Run selected notebooks
         run: | 
-          pytest --nbmake --nbmake-kernel=paleopandas examples/Playing_with_Series_in_Pyleoclim.ipynb examples/Non-nanosecond_Series.ipynb
+          pytest --nbmake --nbmake-kernel=paleopandas examples/Playing_with_Series_in_Pyleoclim.ipynb examples/Non-nanosecond_Series.ipynb examples/L0_loading_to_series.ipynb
