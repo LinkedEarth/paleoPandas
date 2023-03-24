@@ -9,7 +9,7 @@ lat,-75.1011
 lon,123.3478
 archiveType,Glacier Ice
 importedFrom,https://www.ncei.noaa.gov/pub/data/paleo/icecore/antarctica/antarctica2015co2composite.txt
-log,"({0: 'dropna', 'applied': True, 'verbose': True}, {1: 'sort_ts', 'direction': 'ascending'})"
+log,
 ###,end metadata
 Age [ky BP],$CO_2$ [ppm]
 -0.05103,368.02
