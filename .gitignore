@@ -164,3 +164,4 @@ cython_debug/
 
 # temporary files
 *.xls.1
+*.jupyterlab-workspace
